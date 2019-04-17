@@ -32,7 +32,7 @@ int main() {
 	A:
 	srand(time(NULL));
 	printf("\n*****************************************************************************************\n");
-	printf("\n\n\t\t\t INDEX:\n\n");
+	printf("\n\n\t\t\t ASHIKA's PROJECT-BANKER's SAFE SEQUENCE:\n\n");
 	printf("\n*****************************************************************************************\n");
         printf("\n 1. Enter number of PROCESSES\t: ");
         scanf("%d", &num_process);
@@ -75,7 +75,7 @@ int main() {
         printf("\n");
 
 	// calculate need matrix
-	printf("\n Calculating need matrix from the formula:\n\tN E E D\t=\tA L L O C A T E D\t+\tA V A I L A B L E....\n");
+	printf("\n Calculating need matrix from the formula:\n\tN E E D \t=\tM A X\t-\tA L L O C A T E D....\n");
         need = (int **)malloc(num_process * sizeof(*need));
         for(int i=0; i<num_process; i++)
                 need[i] = (int *)malloc(num_res * sizeof(**need));
@@ -99,7 +99,7 @@ int main() {
 				goto C;
 			}
 			else if(choice == 'n' || choice == 'N')		thankyou();
-			else	goto A;
+			else	goto A;s
         }
 
         printf("\n\n\tSAFE STATE! Safe Sequence Found : ");
